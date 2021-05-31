@@ -51,7 +51,7 @@
   .imagewoman {
     position: absolute;
     top: 830px;
-    left: 310px;
+    left: 320px;
   }
   
   .container {
@@ -100,5 +100,5 @@
   p {
     font-family: 'Bazzi', Helvetica, sans-serif;
     color: black;
-    font-size: 19px;
+    font-size: 18px;
   }
