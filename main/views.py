@@ -34,6 +34,7 @@ def create(request):
     new_post.body = request.POST['body']
     new_post.image = request.FILES['image']
     new_post.save()
+    new_post.writer = request.user
     return redirect('main:detail', new_post.id)
 
 def edit(request, id):
@@ -47,6 +48,7 @@ def update(request, id):
     update_post.pub_date = timezone.now()
     update_post.body = request.POST['body']
     update_post.save()
+    update_post.writer = request.user
     return redirect('main:detail', update_post.id)
 
 def delete(request, id):
